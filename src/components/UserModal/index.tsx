@@ -1,6 +1,5 @@
 import UIModal from 'react-modal';
 import './style.scss';
-import Image from '../../assets/images/user.png';
 import { IUserProfile } from '../../services/user';
 
 UIModal.setAppElement('#root');
@@ -9,7 +8,6 @@ interface IModalProps extends UIModal.Props {
 }
 
 function Modal({ user, ...rest }: IModalProps): JSX.Element {
-  console.log(user);
   return (
     <UIModal {...rest} className="modal" overlayClassName="modalContainer">
       {user ? (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import OrderModal from '../../components/OrderModal';
+import OrderModal from '../../components/CommentsModal';
 import UserModal from '../../components/UserModal';
 import CardPost from '../../components/CardPost';
 import { getPosts, IPosts } from '../../services/posts';

@@ -53,7 +53,6 @@ function Login(): JSX.Element {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
-      console.log('Auth', currentuser);
       if (currentuser) {
         navigate('/home');
       }

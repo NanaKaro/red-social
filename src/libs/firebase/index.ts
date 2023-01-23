@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
+import { initializeApp } from 'firebase/app';
 
-firebase.initializeApp({
+initializeApp({
   apiKey: 'AIzaSyBZ63ld9hEHo5iPhCJtk1JN7kN2rEezZGI',
   authDomain: 'red-social-7003a.firebaseapp.com',
   projectId: 'red-social-7003a',

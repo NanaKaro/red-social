@@ -2,7 +2,6 @@ import './styles.scss';
 import { IPost } from '../../services/posts';
 import Like from '../../assets/images/like.png';
 import Commentary from '../../assets/images/chat.png';
-import { IComments } from '../../services/commentary';
 
 interface ICardPostProps {
   post?: IPost;
