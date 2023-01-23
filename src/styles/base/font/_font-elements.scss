@@ -1,0 +1,279 @@
+// =============================================================================
+// Import Base variables
+// =============================================================================
+
+@import '../variables/_base-variables';
+
+// =============================================================================
+// Text elements styles -mixin
+// =============================================================================
+
+@mixin text(
+  $size: $font__size,
+  $line: $font__base,
+  $margin-top: 0,
+  $margin-bottom: 0,
+  $family: $font__family,
+  $color: $color__text,
+  $weight: 100,
+  $style: normal
+) {
+  color: $color;
+  font-family: $family;
+  font-size: em($size);
+  font-weight: $weight;
+  line-height: em($line, $size);
+  margin-top: em($margin-top, $size);
+  margin-bottom: em($margin-bottom, $size);
+  font-style: $style;
+}
+
+/**
+ * Text elements - styles.
+ */
+
+h1,
+.h1 {
+  @include text(57, 76, 21, 42, $color: $color__text, $weight: 900);
+}
+
+h2,
+.h2 {
+  @include text(36, 42, 7, 18, $color: $color__text, $weight: 900);
+}
+
+h3,
+.h3 {
+  @include text(26, 21, 0, 21, $color: $color__text, $weight: 300);
+}
+
+h4,
+.h4 {
+  @include text(18, 21, 0, 18, $weight: 600);
+}
+
+h5,
+.h5 {
+  @include text(16, 21, 0, 21, $weight: 300);
+}
+
+h6,
+.h6 {
+  @include text(12, 16, 0, 10, $weight: 300);
+}
+
+p {
+  @include text(
+    $size: 16,
+    $margin-bottom: 21,
+    $color: $color__text,
+    $weight: 100
+  );
+}
+
+ul li {
+  @include text(15, 16, 7, 0, $weight: 200);
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding-left: 0;
+  margin-bottom: em(28);
+  li {
+    @include text(18, 18, 30, 0, $weight: 200);
+    counter-increment: my-awesome-counter;
+    padding-left: em(35);
+    position: relative;
+    &:before {
+      content: counter(my-awesome-counter);
+      position: absolute;
+      top: -3px;
+      left: 0;
+      background-color: red;
+      font-weight: bold;
+      width: 28px;
+      height: 28px;
+      color: white;
+      font-weight: 300;
+      font-size: 15px;
+      @include prefix(
+        (
+          border-radius: 50%,
+          display: flex,
+          justify-content: center,
+          align-items: center,
+        ),
+        webkit moz o ms
+      );
+    }
+  }
+}
+
+a {
+  @include text(
+    $size: 14,
+    $margin-bottom: 21,
+    $color: $color__primary,
+    $weight: 100
+  );
+}
+
+em {
+  @include text(11, 15, 10, 0, $weight: 300);
+}
+
+/**
+ * Text colors - styles.
+ */
+
+.text__color--light {
+  color: $color__gray !important;
+}
+
+.text__color--dark {
+  color: $color__text--dark !important;
+}
+
+.text__color {
+  color: $color__text !important;
+}
+
+.text__color--primary {
+  color: $color__primary !important;
+}
+
+.text__color--white {
+  color: $color__background--main !important;
+}
+
+/**
+ * Text align - styles.
+ */
+
+.text__align--left {
+  display: block;
+  text-align: left !important;
+}
+
+.text__align--right {
+  display: block;
+  text-align: right !important;
+}
+
+.text__align--center {
+  display: block;
+  text-align: center !important;
+}
+
+.text__align--justify {
+  display: block;
+  text-align: justify !important;
+}
+
+/**
+ * Text align - weight.
+ */
+
+.text__weight--regular {
+  font-weight: normal !important;
+}
+
+/**
+ * Text margin and padding variations
+ */
+
+.text__margin--bottom0 {
+  margin-bottom: 0 !important;
+}
+
+.text__padding--left2 {
+  padding-left: 2em;
+}
+
+.text__margin--left {
+  margin-left: em(10) !important ;
+}
+
+.text__margin--bottom1 {
+  margin-bottom: 1em !important;
+}
+
+.text__margin--bottom2 {
+  margin-bottom: 2em !important;
+}
+
+.text__margin--top1 {
+  margin-top: 1em !important;
+}
+
+.text__margin--top2 {
+  margin-top: 2em !important;
+}
+
+.margin0 {
+  margin: 0 !important;
+}
+
+.marginauto {
+  margin: auto !important;
+}
+
+.margintb1 {
+  margin: 1em 0 !important;
+}
+
+.marginsides {
+  margin: 0 1em;
+}
+
+.text--small {
+  font-size: em(12) !important;
+  @include media(lg) {
+    font-size: em(14) !important;
+  }
+}
+
+.text--regular {
+  font-size: em(14) !important;
+}
+
+.text--middle {
+  font-size: em(16) !important;
+}
+
+.text--large {
+  font-size: em(18) !important;
+}
+
+.text--xlarge {
+  font-size: em(21) !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.semibold {
+  font-weight: 600 !important;
+}
+
+.regular {
+  font-weight: 400 !important;
+}
+
+// display
+
+.display--grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.widthmax {
+  width: 100% !important;
+}
+
+img {
+  width: 21px;
+  height: 21px;
+}

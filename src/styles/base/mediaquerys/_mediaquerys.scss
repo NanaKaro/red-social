@@ -1,0 +1,34 @@
+// =============================================================================
+// MediaQuery Breakpoints - mixin
+// =============================================================================
+
+$breakpoint-ssm: 375px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xlg: 1200px;
+
+@mixin media($media) {
+  @if $media == ssm {
+    @media (min-width: $breakpoint-ssm) and (max-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+  @if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $media == xlg {
+    @media (min-width: $breakpoint-xlg) {
+      @content;
+    }
+  }
+}

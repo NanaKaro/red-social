@@ -1,0 +1,84 @@
+@import '../../styles/index';
+
+.modal {
+  background-color: white;
+  width: 90%;
+  min-height: auto;
+  border-radius: em(5);
+  padding: 10px;
+  overflow: hidden;
+  margin: auto;
+  @include media(md) {
+    width: 70%;
+  }
+  @include media(lg) {
+    width: 50%;
+  }
+  @include media(xlg) {
+    width: 30%;
+  }
+  &:focus {
+    outline: none;
+  }
+
+
+  &__body {
+
+    .title{
+      font-size: 20px;
+      margin: 0 auto 20px;
+    }
+
+    .titleError{
+      font-size: 20px;
+      width: 70%;
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    .image{
+      display: flex;
+      justify-content: center;
+
+      img{
+        width: 150px;
+        height: auto;
+        margin: auto;
+      }
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      label{
+        margin: 0 0 10px;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5em;
+    button {
+      background-color: #ffd543;
+      border-radius: 5px;
+      height: 40px;
+      border: none;
+      width: 80%;
+      &:disabled {
+        background-color: #cccccc;
+      }
+    }
+  }
+}
+
+.modalContainer {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(black, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}

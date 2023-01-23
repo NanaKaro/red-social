@@ -1,0 +1,188 @@
+@import '../../styles/index';
+
+.containerLogin{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(139deg, rgba(249,209,255,1) 35%, rgba(184,207,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__login{
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background-color: #fff;
+    opacity: 1;
+    padding: 40px 20px;
+    text-align: center;
+    p{
+      width: 80%;
+      margin: auto;
+    }
+    label{
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+
+  .socialLogin {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 24px auto;
+
+    @include media(md) {
+      flex-direction: row;
+    }
+    @include media(lg) {
+      flex-direction: column;
+      width: 80%;
+    }
+    @include media(xlg) {
+      flex-direction: row;
+      width: 70%;
+    }
+  }
+
+  #socialHead {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .buttonLogin {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    left: 0px;
+    height: 50px;
+    text-align: left;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font: normal normal 16px / normal 'Helvetica Neue', Helvetica,
+      'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo,
+      'ＭＳ Ｐゴシック', arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    outline: rgb(68, 68, 68) none 0px;
+    overflow: hidden;
+    padding: 0;
+    @include media(md) {
+      width: 100%;
+    }
+    @include media(lg) {
+      width: 100%;
+    }
+    @include media(xlg) {
+      width: 100%;
+    }
+    &--fb {
+      margin-bottom: 1em;
+      background: rgba(0, 0, 0, 0) -webkit-linear-gradient(
+          rgb(86, 120, 188),
+          rgb(49, 74, 123)
+        ) repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(rgb(86, 120, 188), rgb(49, 74, 123)) repeat scroll 0% 0% /
+        auto padding-box border-box;
+      border-top: 1px solid rgb(49, 74, 123);
+      border-right: 1px solid rgb(42, 64, 105);
+      border-bottom: 1px solid rgb(42, 64, 105);
+      border-left: 1px solid rgb(42, 64, 105);
+    }
+    &--gplus {
+      margin-bottom: 1em;
+      background-color: #dd4b39;
+      background: -webkit-linear-gradient(#dd4b39, #d14836);
+      background: linear-gradient(#dd4b39, #d14836);
+      border-top: 1px solid rgb(230, 88, 88);
+      border-right: 1px solid rgb(227, 66, 66);
+      border-bottom: 1px solid rgb(227, 66, 66);
+      border-left: 1px solid rgb(227, 66, 66);
+    }
+    &--twt {
+      background-color: #3fa7d0;
+      background: -webkit-linear-gradient(#5fbee4, #2091bd);
+      background: linear-gradient(#5fbee4, #2091bd);
+      border: 1px solid #1c82a7;
+      border-top-color: #2091bd;
+      text-shadow: 0 1px #ffffff;
+      border-top: 1px solid rgb(32, 145, 189);
+      border-right: 1px solid rgb(28, 130, 167);
+      border-bottom: 1px solid rgb(28, 130, 167);
+      border-left: 1px solid rgb(28, 130, 167);
+    }
+
+    &__name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: 0px 0px;
+      bottom: 0px;
+      box-shadow: rgba(0, 0, 0, 0.0470588) 1px 0px 0px 0px;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      height: 48px;
+      left: 0px;
+      margin: 0;
+      text-align: center;
+      text-decoration: none solid rgb(68, 68, 68);
+      text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+      top: 0px;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 20%;
+      align-self: flex-start;
+      border: 0px none rgb(68, 68, 68);
+      font: normal normal 16px / normal 'Helvetica Neue', Helvetica,
+        'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo,
+        'ＭＳ Ｐゴシック', arial, sans-serif;
+      outline: rgb(68, 68, 68) none 0px;
+      &--fb {
+        background: rgba(255, 255, 255, 0.0784314) no-repeat scroll 0px 0px /
+          auto padding-box border-box;
+      }
+      &--gp {
+        background: rgba(255, 255, 255, 0.0666667) no-repeat scroll -43px -44px /
+          auto padding-box border-box;
+      }
+      &--twt {
+        background: rgba(255, 255, 255, 0.0666667) no-repeat scroll -43px -44px /
+          auto padding-box border-box;
+      }
+    }
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      height: 17px;
+      text-decoration: none solid rgb(255, 255, 255);
+      text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 80%;
+      border: 0px none rgb(255, 255, 255);
+      font: normal normal bold 16px / normal 'Helvetica Neue', Helvetica,
+        'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo,
+        'ＭＳ Ｐゴシック', arial, sans-serif;
+      margin: -3px 0px 0px 10px;
+      outline: rgb(255, 255, 255) none 0px;
+    }
+  }
+}

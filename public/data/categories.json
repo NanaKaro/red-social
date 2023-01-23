@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "All",
+    "icon": "../img/701965.svg"
+  },
+  {
+    "id": 2,
+    "name": "Pizza",
+    "icon": "../img/599995.svg"
+  },
+  {
+    "id": 3,
+    "name": "Asian",
+    "icon": "../img/1900683.svg"
+  },
+  {
+    "id": 4,
+    "name": "Burgers",
+    "icon": "../img/883806.svg"
+  },
+  {
+    "id": 5,
+    "name": "Barbecue",
+    "icon": "../img/933310.svg"
+  },
+  {
+    "id": 6,
+    "name": "Dessers",
+    "icon": "../img/174394.svg"
+  },
+  {
+    "id": 7,
+    "name": "Thai",
+    "icon": "../img/135367.svg"
+  },
+  {
+    "id": 8,
+    "name": "Sushi",
+    "icon": "../img/1900683.svg"
+  }
+]

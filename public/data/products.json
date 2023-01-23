@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza 1",
+    "qualification": 4.9,
+    "time": "25-30min",
+    "price": 14.99,
+    "image": "https://cdn.colombia.com/gastronomia/2011/08/25/pizza-margarita-3684.jpg",
+    "categoryId": 2
+  },
+  {
+    "id": 2,
+    "name": "Pizza 2",
+    "qualification": 4.9,
+    "time": "25-30min",
+    "price": 14.99,
+    "image": "https://cdn.colombia.com/gastronomia/2011/08/25/pizza-margarita-3684.jpg",
+    "categoryId": 2
+  },
+  {
+    "id": 3,
+    "name": "Pizza 3",
+    "qualification": 4.9,
+    "time": "25-30min",
+    "price": 14.99,
+    "image": "https://cdn.colombia.com/gastronomia/2011/08/25/pizza-margarita-3684.jpg",
+    "categoryId": 2
+  },
+  {
+    "id": 4,
+    "name": "Asian 1",
+    "qualification": 4.8,
+    "time": "15-20min",
+    "price": 6.99,
+    "image": "https://www.conclusion.com.ar/wp-content/uploads/2017/04/thai2.jpg",
+    "categoryId": 3
+  },
+  {
+    "id": 5,
+    "name": "Asian 2",
+    "qualification": 4.8,
+    "time": "15-20min",
+    "price": 6.99,
+    "image": "https://www.conclusion.com.ar/wp-content/uploads/2017/04/thai2.jpg",
+    "categoryId": 3
+  },
+  {
+    "id": 6,
+    "name": "Burguer 1",
+    "qualification": 4.7,
+    "time": "10-15min",
+    "price": 9.99,
+    "image": "https://sevilla.abc.es/contenidopromocionado/wp-content/uploads/sites/2/2019/09/rrss-wp-burguer.jpeg",
+    "categoryId": 4
+  },
+  {
+    "id": 7,
+    "name": "Burguer 2",
+    "qualification": 4.7,
+    "time": "10-15min",
+    "price": 9.99,
+    "image": "https://sevilla.abc.es/contenidopromocionado/wp-content/uploads/sites/2/2019/09/rrss-wp-burguer.jpeg",
+    "categoryId": 4
+  },
+  {
+    "id": 8,
+    "name": "Burguer 3",
+    "qualification": 4.7,
+    "time": "10-15min",
+    "price": 9.99,
+    "image": "https://sevilla.abc.es/contenidopromocionado/wp-content/uploads/sites/2/2019/09/rrss-wp-burguer.jpeg",
+    "categoryId": 4
+  },
+  {
+    "id": 9,
+    "name": "Barbacue 1",
+    "qualification": 4.4,
+    "time": "15-25min",
+    "price": 12.99,
+    "image": "https://ep01.epimg.net/elcomidista/imagenes/2019/07/18/articulo/1563442571_462059_1563442880_media_normal.jpg",
+    "categoryId": 5
+  },
+  {
+    "id": 10,
+    "name": "Dessers 1",
+    "qualification": 4.4,
+    "time": "15-25min",
+    "price": 12.99,
+    "image": "https://streetfoodcentral.com/ezoimgfmt/static.wixstatic.com/media/19ad19_d1dfda7ef50c4e84b48d3e859d0c6b67~mv2.jpg/v1/fill/w_738,h_491,al_c,lg_1,q_90/19ad19_d1dfda7ef50c4e84b48d3e859d0c6b67~mv2.webp?ezimgfmt=rs:233x155/rscb1/ng:webp/ngcb1",
+    "categoryId": 6
+  },
+  {
+    "id": 11,
+    "name": "Dessers 2",
+    "qualification": 4.4,
+    "time": "15-25min",
+    "price": 12.99,
+    "image": "https://streetfoodcentral.com/ezoimgfmt/static.wixstatic.com/media/19ad19_d1dfda7ef50c4e84b48d3e859d0c6b67~mv2.jpg/v1/fill/w_738,h_491,al_c,lg_1,q_90/19ad19_d1dfda7ef50c4e84b48d3e859d0c6b67~mv2.webp?ezimgfmt=rs:233x155/rscb1/ng:webp/ngcb1",
+    "categoryId": 6
+  },
+  {
+    "id": 12,
+    "name": "Thai 2",
+    "qualification": 4.4,
+    "time": "15-25min",
+    "price": 12.99,
+    "image": "https://astelus.com/wp-content/viajes/Ingredientes-Pad-Thai.jpg",
+    "categoryId": 7
+  },
+  {
+    "id": 13,
+    "name": "Thai 2",
+    "qualification": 4.4,
+    "time": "15-25min",
+    "price": 12.99,
+    "image": "https://astelus.com/wp-content/viajes/Ingredientes-Pad-Thai.jpg",
+    "categoryId": 7
+  },
+  {
+    "id": 14,
+    "name": "Sushi 1",
+    "qualification": 4.4,
+    "time": "15-20min",
+    "price": 12.99,
+    "image": "https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/06/03/Pictures/_2702b6e4-298e-11e6-a44e-cf92da887fb1.jpg",
+    "categoryId": 8
+  }
+]

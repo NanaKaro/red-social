@@ -1,0 +1,89 @@
+.cardPost {
+  width: 80%;
+  margin: 0 auto 20px;
+  //padding: 20px;
+  border-radius: 16px;
+  border: transparent;
+  box-shadow: 0px 18px 28px rgba(9, 30, 66, 0.15), 0px 0px 1px rgba(9, 30, 66, 0.31);
+  &__header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 20px;
+
+    img{
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    label{
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(25, 51, 109);
+    }
+  }
+
+  &__body{
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+
+    label{
+      margin-bottom: 20px;
+    }
+
+    img{
+      width: 80%;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  &__tags{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    padding: 0 20px 10px;
+
+    label{
+      color: rgb(170, 70, 186);
+    }
+  }
+
+  &__likes{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 0 20px 20px;
+
+    .actions{
+      gap: 20px;
+    }
+
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .commentary{
+      color: rgb(102, 102, 102);
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  }
+
+}
